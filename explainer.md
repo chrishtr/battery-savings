@@ -36,6 +36,7 @@ If a site wished to change behavior based on battery-savings settings, they coul
    "reduced-framerate" mode based on a combination of OS & user
    preferences, system state (such as limited battery availability),
    and the value of the aforementioned meta tag. */
+   
 @prefer-reduced-framerate {
 * {
   animation: none !important; /* or change animations to use keyframes optimized for battery-savings */
