@@ -2,7 +2,7 @@
 
 ## Summary
 
-Saving battery or CPU is important for computing devices that are not connected to an electrical source, or to avoid hogging the CPU in the presence of process contention.
+Saving battery or CPU is important for computing devices that are not connected to an electrical source, or to better share commong CPU & GPU resources among running processes.
 
 Web sites that are known to have high CPU or battery costs may want to request that the UA optimize for CPU or battery, even if the user has not requested it.
 
