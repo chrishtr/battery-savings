@@ -22,6 +22,13 @@ If a site wanted to allow generic slowdown of script execution:
 <meta name="battery-savings" content="allow-reduced-script-speed">
 ```
 
+Or if it wanted both:
+
+```
+<meta name="battery-savings" content="allow-reduced-framerate allow-reduced-script-speed">
+```
+
+
 If a site wished to change behavior based on battery-savings settings, they could use a CSS media query:
 
 ```
