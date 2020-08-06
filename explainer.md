@@ -54,3 +54,8 @@ Similar to features such as [color schemes](https://drafts.csswg.org/css-color-a
 * Spec text saying that if the user or OS has gone into a battery savings mode, then the UA should apply one or more of the battery savings to sites.
 * Spec text saying that UAs should respect the `meta` tag on a site unless it conflicts with user or OS settings.
 
+## Alternatives considered
+
+* Expose a new API to request a specific framerate. This solves some of the use cases for particular sites, but is not forward compatible to future devices, and can be hard if the optimal frame rate depends on device class.
+
+
