@@ -32,6 +32,8 @@ Or if it wanted both:
 If a site wished to change behavior based on battery-savings settings, they could use a CSS media query:
 
 ```
+/* This media query will apply if the User Agent has decided to enter "reduced-framerate" mode based on a combination of OS & user
+preferences, system state (such as limited battery availability), and the value of the aforementioned meta tag. */
 @prefer-reduced-framerate {
 * {
   animation: none !important; /* or change animations to use keyframes optimized for battery-savings */
@@ -44,6 +46,8 @@ If a site wished to change behavior based on battery-savings settings, they coul
 * Video or video conferencing sites are CPU heavy and often run for a very long time, thus making them good candidates for saving battery use even if the battery is currently not close to empty (or even if the device is plugged in, to avoid hogging the CPU).
 
 * If a device is not yet low on battery, but the user wishes to go into a battery savings mode, sites may wish to participate, along with the User Agent, on which strategies apply best to that site without ruining the site's UX.
+
+* If a site has some javascript tasks that might run long but do not directly impact UX, it's ok to run those tasks slower. Examples of such tasks might including third-party ads setup or incremental pre-renendering setup of offscreen content.
 
 ## Possible implementation techniques
 
