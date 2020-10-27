@@ -12,26 +12,26 @@ Most modern OSes also have battery saving features that kick in either when the 
 
 If a site wanted to allow reduced framerate if it saved battery, they would add this to their page:
 
-```
+```html
 <meta name="battery-savings" content="allow-reduced-framerate">
 ```
 
 If a site wanted to allow generic slowdown of script execution:
 
-```
+```html
 <meta name="battery-savings" content="allow-reduced-script-speed">
 ```
 
 Or if it wanted both:
 
-```
+```html
 <meta name="battery-savings" content="allow-reduced-framerate allow-reduced-script-speed">
 ```
 
 
 If a site wished to change behavior based on battery-savings settings, they could use a CSS media query:
 
-```
+```css
 /* This media query will apply if the User Agent has decided to enter
    "reduced-framerate" mode based on a combination of OS & user
    preferences, system state (such as limited battery availability),
@@ -41,7 +41,6 @@ If a site wished to change behavior based on battery-savings settings, they coul
 * {
   animation: none !important; /* or change animations to use keyframes optimized for battery-savings */
 }
-
 ```
 
 ## Real-world use cases
